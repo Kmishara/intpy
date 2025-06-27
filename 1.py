@@ -17,9 +17,11 @@ class Calculator:
                 return "Division by zero"
         else:
             return "Invalid operation"
+#take input 
 a = float(input("enter a first number:"))
 b = float(input("enter a second number:"))
 operation = input("enter a operation (add,subtract,multiply,division):")
+# obj calling
 cal = Calculator(a,b,operation)
 result = cal.calculate()
 print("Result:",result)
